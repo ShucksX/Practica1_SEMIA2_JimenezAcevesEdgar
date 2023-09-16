@@ -11,10 +11,12 @@ def gradiente_desc(inicio,aprendizaje,iteraciones):
     vector = inicio
     ap = aprendizaje
     for bea in range(iteraciones):
+        print("Valores de x")
         print(vector[0])
         print(vector[1])
         print("---------------")
         grad2 =nd.Gradient(funcion)(vector)
+        print("Gradiente")
         print(grad2)
         diff1= -ap* grad2[0]
         diff2= -ap* grad2[1]
